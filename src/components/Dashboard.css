@@ -25,10 +25,24 @@
   .dashboard-content {
     flex-direction: column;
   }
+  
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
 }
 
 @media (max-width: 768px) {
   .dashboard {
     flex-direction: column;
+  }
+  
+  .sidebar {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 }

@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  min-height: 100vh;
 }
 
 .sidebar-header {
@@ -61,6 +62,7 @@
   background-color: #3b82f6;
   border-radius: 0 25px 25px 0;
   margin-right: 20px;
+  position: relative;
 }
 
 .nav-item.active::before {

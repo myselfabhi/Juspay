@@ -104,3 +104,36 @@
 .user-btn:hover {
   background-color: #2563eb;
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .header-center {
+    order: 2;
+  }
+  
+  .header-right {
+    order: 3;
+  }
+  
+  .header-left {
+    order: 1;
+  }
+  
+  .search-bar {
+    max-width: 100%;
+  }
+  
+  .header-actions {
+    gap: 4px;
+  }
+  
+  .action-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
