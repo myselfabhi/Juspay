@@ -4,6 +4,12 @@
   overflow-y: auto;
   background-color: #f8fafc;
   min-height: calc(100vh - 64px);
+  transition: background-color 0.3s ease;
+}
+
+/* Dark theme */
+[data-theme="dark"] .main-content {
+  background-color: #0f172a;
 }
 
 .content-header {
@@ -15,6 +21,12 @@
   font-weight: 700;
   color: #1e293b;
   margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* Dark theme */
+[data-theme="dark"] .content-title {
+  color: #f1f5f9;
 }
 
 .content-body {

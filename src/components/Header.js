@@ -1,8 +1,11 @@
 import React from 'react';
-import { Search, Sun, RotateCcw, Bell, Grid, User } from 'lucide-react';
+import { Search, Sun, Moon, RotateCcw, Bell, Grid, User } from 'lucide-react';
+import { useTheme } from '../contexts/ThemeContext';
 import './Header.css';
 
 const Header = () => {
+  const { isDark, toggleTheme } = useTheme();
+
   return (
     <div className="header">
       <div className="header-left">
@@ -26,8 +29,8 @@ const Header = () => {
       
       <div className="header-right">
         <div className="header-actions">
-          <button className="action-btn">
-            <Sun size={20} />
+          <button className="action-btn" onClick={toggleTheme}>
+            {isDark ? <Sun size={20} /> : <Moon size={20} />}
           </button>
           <button className="action-btn">
             <RotateCcw size={20} />

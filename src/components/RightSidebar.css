@@ -8,6 +8,13 @@
   flex-direction: column;
   gap: 32px;
   min-height: calc(100vh - 64px);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dark theme */
+[data-theme="dark"] .right-sidebar {
+  background-color: #0f172a;
+  border-left-color: #334155;
 }
 
 .sidebar-section {
@@ -21,6 +28,12 @@
   font-weight: 600;
   color: #1e293b;
   margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* Dark theme */
+[data-theme="dark"] .section-title {
+  color: #f1f5f9;
 }
 
 .notifications-list,
@@ -49,6 +62,20 @@
 .contact-item:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transform: translateY(-1px);
+}
+
+/* Dark theme */
+[data-theme="dark"] .notification-item,
+[data-theme="dark"] .activity-item,
+[data-theme="dark"] .contact-item {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .notification-item:hover,
+[data-theme="dark"] .activity-item:hover,
+[data-theme="dark"] .contact-item:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .notification-icon,

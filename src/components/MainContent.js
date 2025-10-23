@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import MetricsCards from './MetricsCards';
 import ChartsSection from './ChartsSection';
 import RevenueLocation from './RevenueLocation';
