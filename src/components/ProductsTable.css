@@ -1,0 +1,77 @@
+.products-table {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.table-header {
+  margin-bottom: 20px;
+}
+
+.table-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.products-table-content {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.products-table-content thead th {
+  text-align: left;
+  padding: 12px 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.products-table-content tbody tr {
+  border-bottom: 1px solid #f1f5f9;
+  transition: background-color 0.2s ease;
+}
+
+.products-table-content tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.products-table-content tbody tr:last-child {
+  border-bottom: none;
+}
+
+.products-table-content tbody td {
+  padding: 16px 0;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.product-name {
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.product-price {
+  color: #64748b;
+}
+
+.product-quantity {
+  color: #64748b;
+  text-align: center;
+}
+
+.product-amount {
+  font-weight: 600;
+  color: #1e293b;
+  text-align: right;
+}

@@ -1,0 +1,127 @@
+.sidebar {
+  width: 280px;
+  background-color: #475569;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  padding: 24px 20px;
+  border-bottom: 1px solid #64748b;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 20px 0;
+}
+
+.nav-section {
+  margin-bottom: 32px;
+}
+
+.nav-section-title {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #94a3b8;
+  margin: 0 0 16px 20px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  gap: 12px;
+}
+
+.nav-item:hover {
+  background-color: #64748b;
+}
+
+.nav-item.active {
+  background-color: #3b82f6;
+  border-radius: 0 25px 25px 0;
+  margin-right: 20px;
+}
+
+.nav-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #60a5fa;
+}
+
+.nav-item span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-arrow {
+  margin-left: auto;
+  font-size: 16px;
+  color: #94a3b8;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  .sidebar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .nav-section {
+    margin-bottom: 0;
+    min-width: 200px;
+  }
+  
+  .nav-section-title {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+  
+  .sidebar-nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .nav-section {
+    min-width: auto;
+  }
+}
