@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   Home, 
   ShoppingCart, 
@@ -11,12 +11,13 @@ import {
   Settings, 
   Building, 
   Globe, 
-  Share2 
+  Share2,
+  List
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import './Sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = ({ onPageChange, currentPage }) => {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
@@ -34,6 +35,13 @@ const Sidebar = () => {
             <li className="nav-item">
               <Folder size={20} />
               <span>Projects</span>
+            </li>
+            <li 
+              className={`nav-item ${currentPage === 'orderlist' ? 'active' : ''}`}
+              onClick={() => onPageChange('orderlist')}
+            >
+              <List size={20} />
+              <span>Order List</span>
             </li>
           </ul>
         </div>

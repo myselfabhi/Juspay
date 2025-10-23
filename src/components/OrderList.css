@@ -1,0 +1,417 @@
+.order-list-page {
+  flex: 1;
+  padding: 24px;
+  background-color: #f8fafc;
+  min-height: calc(100vh - 64px);
+}
+
+.order-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.order-list-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.order-list-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e2e8f0;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #64748b;
+}
+
+.action-btn:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.order-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  color: #64748b;
+  z-index: 1;
+}
+
+.search-input {
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 14px;
+  outline: none;
+  width: 200px;
+  transition: border-color 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.order-list-container {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-table thead th {
+  text-align: left;
+  padding: 16px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+}
+
+.order-table tbody tr {
+  border-bottom: 1px solid #f1f5f9;
+  transition: background-color 0.2s ease;
+}
+
+.order-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.order-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.order-table tbody td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.table-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: #3b82f6;
+  cursor: pointer;
+}
+
+.order-id {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.user-cell {
+  min-width: 150px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.user-name {
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.project-cell {
+  min-width: 150px;
+}
+
+.project-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-icon {
+  color: #64748b;
+}
+
+.address-cell {
+  min-width: 150px;
+  color: #64748b;
+}
+
+.date-cell {
+  min-width: 120px;
+}
+
+.date-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.date-icon {
+  color: #64748b;
+}
+
+.status-cell {
+  min-width: 120px;
+}
+
+.status-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status-dot.purple {
+  background-color: #8b5cf6;
+}
+
+.status-dot.green {
+  background-color: #10b981;
+}
+
+.status-dot.blue {
+  background-color: #3b82f6;
+}
+
+.status-dot.yellow {
+  background-color: #f59e0b;
+}
+
+.status-dot.gray {
+  background-color: #6b7280;
+}
+
+.actions-cell {
+  width: 40px;
+  text-align: center;
+}
+
+.more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 6px;
+  color: #64748b;
+  transition: all 0.2s ease;
+}
+
+.more-btn:hover {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.pagination-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e2e8f0;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #64748b;
+  transition: all 0.2s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-numbers {
+  display: flex;
+  gap: 4px;
+}
+
+.pagination-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e2e8f0;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.pagination-number:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.pagination-number.active {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .order-table {
+    font-size: 13px;
+  }
+  
+  .order-table thead th,
+  .order-table tbody td {
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-list-page {
+    padding: 16px;
+  }
+  
+  .order-list-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  
+  .order-list-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .search-input {
+    width: 150px;
+  }
+  
+  .order-table {
+    font-size: 12px;
+  }
+  
+  .order-table thead th,
+  .order-table tbody td {
+    padding: 8px 12px;
+  }
+  
+  .user-avatar {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
+  
+  .pagination {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .order-table thead,
+  .order-table tbody,
+  .order-table tr,
+  .order-table th,
+  .order-table td {
+    display: block;
+  }
+  
+  .order-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  .order-table tr {
+    border: 1px solid #e2e8f0;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    padding: 12px;
+  }
+  
+  .order-table td {
+    border: none;
+    padding: 4px 0;
+    text-align: left;
+  }
+  
+  .order-table td:before {
+    content: attr(data-label) ": ";
+    font-weight: 600;
+    color: #64748b;
+    display: inline-block;
+    width: 100px;
+  }
+}
